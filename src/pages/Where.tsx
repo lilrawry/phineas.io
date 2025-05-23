@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet';
 const roomReservationIcon = 'easyroom-logo-small.png'; // Your custom EasyRoom logo
 const formula1Icon = 'formula-1-logo.png'; // Your custom Formula 1 logo
 // Use reliable CDN sources for external icons
-const securityIcon = 'https://img.icons8.com/color/512/security-shield.png'; // Security shield with lock
+const securityIcon = 'public/cyberSEC.png'; // Security shield with lock
 const cppIcon = 'https://img.icons8.com/color/512/c-plus-plus-logo.png'; // C++ coding icon
 
 const Where = () => {
