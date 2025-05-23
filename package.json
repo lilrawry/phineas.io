@@ -1,7 +1,9 @@
 {
   "name": "phineas-dot-io",
   "version": "0.1.0",
-  "private": true,  "dependencies": {
+  "private": true,
+  "dependencies": {
+    "@babel/traverse": "^7.23.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -15,6 +17,8 @@
     "framer-motion": "^8.5.0",
     "is-svg": "^4.4.0",
     "jotai": "^1.4.4",
+    "nanoid": "^3.3.8",
+    "postcss": "^8.4.31",
     "react": "^18.2.0",
     "react-content-loader": "^6.0.3",
     "react-dom": "^18.2.0",
@@ -23,17 +27,15 @@
     "react-router-dom": "^5.2.0",
     "react-spring": "^9.6.1",
     "react-tippy": "^1.4.0",
+    "semver": "^7.5.2",
     "styled-components": "^5.3.6",
     "typescript": "^4.9.0",
     "use-sound": "^4.0.1",
-    "web-vitals": "^1.0.1",
-    "@babel/traverse": "^7.23.2",
-    "nanoid": "^3.3.8",
-    "semver": "^7.5.2",
-    "postcss": "^8.4.31"
+    "web-vitals": "^1.0.1"
   },  "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
+    "build:railway": "tsc && vite build --config vite.railway.config.js",
     "serve": "vite preview",
     "security-check": "node security-check.js",
     "network-check": "node network-security.js",
@@ -57,15 +59,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },  "devDependencies": {
+  },
+  "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
+    "braces": "^3.0.3",
+    "micromatch": "^4.0.8",
+    "path-to-regexp": "^6.2.1",
     "prettier": "^2.5.0",
+    "rollup": "^3.29.4",
+    "terser": "^5.39.2",
     "vite": "^5.0.0",
     "vite-plugin-svgr": "^2.4.0",
-    "vite-tsconfig-paths": "^4.0.5",
-    "path-to-regexp": "^6.2.1",
-    "rollup": "^3.29.4",
-    "braces": "^3.0.3",
-    "micromatch": "^4.0.8"
+    "vite-tsconfig-paths": "^4.0.5"
   }
 }
