@@ -1,16 +1,16 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { KeyboardEvent, useCallback, useEffect, useState } from 'react';
+import { KeyboardEvent, useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import SuccessiveType from './components/SuccessiveType';
+
 import Nav from './components/Nav';
 import Home from './pages/Home';
 import Where from './pages/Where';
 import How from './pages/How';
 import Etc from './pages/Etc';
 import Presence from './pages/Presence';
-import Sakurajima from './pages/Sakurajima';
 import { ChevronsRight } from './components/Icons';
 
 const shouldPlayIntro = window.location.pathname === '/';
@@ -37,10 +37,10 @@ function App() {
     document.addEventListener('keydown', onKeyDown);
   }, []);
 
-  const onIntroEnd = useCallback(() => {
+  const onIntroEnd = () => {
     localStorage.setItem('v1:intro-completed', 'true');
     setIntroEnded(true);
-  }, []);
+  };
 
   return (
     <Wrapper>
@@ -90,7 +90,6 @@ function App() {
                 <Route exact path="/how" component={How} />
                 <Route exact path="/etc" component={Etc} />
                 <Route exact path="/presence" component={Presence} />
-                <Route exact path="/sakuraji.ma" component={Sakurajima} />
               </Switch>
             </AnimatePresence>
           </ContentWrapper>
