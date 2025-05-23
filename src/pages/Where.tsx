@@ -5,10 +5,12 @@ import Repo from '../components/Repo';
 import { Helmet } from 'react-helmet';
 
 // Project icons - topic-specific professional set
-const roomReservationIcon = '/easyroom-logo-small.png'; // Your custom EasyRoom logo
-const formula1Icon = '/formula-1-logo.png'; // Your custom Formula 1 logo
-const securityIcon = 'https://cdn-icons-png.flaticon.com/512/2665/2665038.png'; // Security shield with lock
-const cppIcon = 'https://cdn-icons-png.flaticon.com/512/6132/6132222.png'; // C++ coding icon
+// Use relative paths for local images to ensure they work in all environments
+const roomReservationIcon = 'easyroom-logo-small.png'; // Your custom EasyRoom logo
+const formula1Icon = 'formula-1-logo.png'; // Your custom Formula 1 logo
+// Use reliable CDN sources for external icons
+const securityIcon = 'https://img.icons8.com/color/512/security-shield.png'; // Security shield with lock
+const cppIcon = 'https://img.icons8.com/color/512/c-plus-plus-logo.png'; // C++ coding icon
 
 const Where = () => {
   return (
@@ -25,7 +27,7 @@ const Where = () => {
           iconReference={roomReservationIcon}
           tagline="Room Reservation System"
           role={'Full-stack Developer'}
-          pretext={'2925'}
+          pretext={'2025'}
           what={
             'A comprehensive room reservation management system built with Django that allows users to book, manage, and track room reservations. Features include user authentication, calendar integration, and real-time availability updates.'
           }
