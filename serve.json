@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/**", "destination": "/index.html" }
+    { "source": "!/health.html", "destination": "/index.html" }
   ],
   "headers": [
     {
