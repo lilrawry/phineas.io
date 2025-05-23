@@ -25,7 +25,7 @@ const Where = () => {
           iconReference={roomReservationIcon}
           tagline="Room Reservation System"
           role={'Full-stack Developer'}
-          pretext={'2024'}
+          pretext={'2925'}
           what={
             'A comprehensive room reservation management system built with Django that allows users to book, manage, and track room reservations. Features include user authentication, calendar integration, and real-time availability updates.'
           }
@@ -36,7 +36,7 @@ const Where = () => {
           iconReference={formula1Icon}
           tagline="Data Analysis & Visualization"
           role={'Lead Developer'}
-          pretext={'2023'}
+          pretext={'2024'}
           what={
             'A comprehensive statistical analysis of Formula 1 data from 1950 to 2024, with interactive visualizations of racing trends, driver performances, and team strategies.'
           }

@@ -15,10 +15,16 @@
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",
+  "description": "Developer and cybersecurity specialist portfolio",
+  "orientation": "any",
+  "scope": "/",
+  "categories": ["portfolio", "technology", "personal"],
+  "lang": "en-US",
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#000000"
