@@ -1,12 +1,12 @@
 import PageWrapper from './PageWrapper';
 import Technology from '../components/Technology';
 import {
-  ElixirLogo,
-  RabbitMQLogo,
+  PythonLogo,
   ReactLogo,
-  RustLogo,
-  SolidityLogo,
   TypescriptLogo,
+  CPlusPlusLogo,
+  DjangoLogo,
+  SecurityLogo
 } from '../components/Icons';
 import { Helmet } from 'react-helmet';
 
@@ -14,20 +14,20 @@ const How = () => {
   return (
     <PageWrapper>
       <Helmet>
-        <title>How</title>
+        <title>Skills</title>
       </Helmet>
-      <h1>How I Do It</h1>
+      <h1>My Technical Skills</h1>
       <p>
-        I highly leverage new bleeding-edge technologies and languages like Elixir to stay on top of
-        the game. You can find a list of my most-used technologies below.
+        I work with a diverse set of technologies focusing on both development and cybersecurity. 
+        Below are some of the key technologies I use regularly in my projects.
       </p>
 
       <Technology
-        color="#9c1fa5"
-        icon={<ElixirLogo />}
-        name="Elixir"
-        type="Realtime, Backend"
-        useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
+        color="#3776AB"
+        icon={<PythonLogo />}
+        name="Python"
+        type="Backend, Data Analysis"
+        useCase={'Building Django web applications and data analysis pipelines for complex projects'}
       />
 
       <Technology
@@ -35,33 +35,39 @@ const How = () => {
         icon={<ReactLogo />}
         name="React"
         type="Frontend framework"
-        useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
-      />
-
-      <Technology
-        color="#dea584"
-        icon={<RustLogo />}
-        name="Rust"
-        type="Backend, System"
-        useCase={
-          'Optimizing parts of Elixir code using Rust NIFs and writing efficient system code'
-        }
+        useCase={'Creating responsive and interactive user interfaces for web applications'}
       />
 
       <Technology
         color="#007acc"
         icon={<TypescriptLogo />}
         name="TypeScript"
-        type="JS Framework"
-        useCase={'Types for JS - will save your life when projects expand'}
+        type="Web Development"
+        useCase={'Developing type-safe frontend applications with better maintainability'}
       />
 
       <Technology
-        color="#FF6600"
-        icon={<RabbitMQLogo />}
-        name="RabbitMQ"
-        type="Message queue"
-        useCase={'Messaging between different services in a robust & durable way'}
+        color="#00599C"
+        icon={<CPlusPlusLogo />}
+        name="C/C++"
+        type="Systems Programming"
+        useCase={'Developing efficient algorithms and data structures for performance-critical applications'}
+      />
+
+      <Technology
+        color="#092E20"
+        icon={<DjangoLogo />}
+        name="Django"
+        type="Web Framework"
+        useCase={'Building full-stack web applications with robust authentication and database systems'}
+      />
+
+      <Technology
+        color="#EE0000"
+        icon={<SecurityLogo />}
+        name="CSecurity"
+        type="Ethical Hacking"
+        useCase={'Performing security assessments, vulnerability scanning, and penetration testing'}
       />
     </PageWrapper>
   );

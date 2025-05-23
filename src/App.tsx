@@ -44,8 +44,8 @@ function App() {
 
   return (
     <Wrapper>
-      <Helmet titleTemplate={'%s • Phineas'}>
-        <title>Phineas Walton</title>
+      <Helmet titleTemplate={'%s • Adib Zindine'}>
+        <title>Adib Zindine</title>
       </Helmet>
       {shouldPlayIntro ? (
         <SuccessiveTypeContainer

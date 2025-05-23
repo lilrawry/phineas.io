@@ -1,87 +1,92 @@
 import PageWrapper from './PageWrapper';
 import Co from '../components/Co';
 import styled from 'styled-components';
-import HopIcon from '../assets/images/hop-social-icon.png';
-import HivenAppIcon from '../assets/images/hiven-app-icon.png';
-import GigglAppIcon from '../assets/images/giggl-app-icon.jpg';
-import HonkAppIcon from '../assets/images/honk-app-icon.jpg';
 import Repo from '../components/Repo';
 import { Helmet } from 'react-helmet';
+
+// Project icons - topic-specific professional set
+const roomReservationIcon = '/easyroom-logo-small.png'; // Your custom EasyRoom logo
+const formula1Icon = '/formula-1-logo.png'; // Your custom Formula 1 logo
+const securityIcon = 'https://cdn-icons-png.flaticon.com/512/2665/2665038.png'; // Security shield with lock
+const cppIcon = 'https://cdn-icons-png.flaticon.com/512/6132/6132222.png'; // C++ coding icon
 
 const Where = () => {
   return (
     <PageWrapper>
       <Helmet>
-        <title>Where</title>
+        <title>Projects</title>
       </Helmet>
-      <h1>Where I've Done It</h1>
-      <h3>Companies</h3>
+      <h1>My Projects & Experience</h1>
+      <h3>Academic Projects</h3>
       <CoWrapper>
         <Co
-          url="https://hop.io"
-          name="Hop"
-          iconReference={HopIcon}
-          tagline="Developer tools"
-          role={'CEO, Co-founder & Developer'}
+          url="https://web-production-5336.up.railway.app/"
+          name="EasyRoom"
+          iconReference={roomReservationIcon}
+          tagline="Room Reservation System"
+          role={'Full-stack Developer'}
+          pretext={'2024'}
           what={
-            'I was tired of the friction and overhead that came with backend deployment. Hop streamlines the deployment experience, with delight included.'
+            'A comprehensive room reservation management system built with Django that allows users to book, manage, and track room reservations. Features include user authentication, calendar integration, and real-time availability updates.'
           }
         />
         <Co
-          url="https://hiven.io"
-          name="Hiven"
-          iconReference={HivenAppIcon}
-          tagline="Consumer social"
-          role={'Founder & Developer'}
-          what={'I founded Hiven back in 2019 to make it easy for anyone to create premium groups.'}
-          acquired
-        />
-        <Co
-          url="https://giggl.app"
-          name="Giggl"
-          iconReference={GigglAppIcon}
-          tagline="Consumer social"
-          role={'Co-founder & Developer'}
-          pretext={'2020-2022'}
+          url="https://formula-1-f97w7s7ro-lilrawrys-projects.vercel.app/Formula1-Webpage/index.html"
+          name="Formula 1 Statistics Project"
+          iconReference={formula1Icon}
+          tagline="Data Analysis & Visualization"
+          role={'Lead Developer'}
+          pretext={'2023'}
           what={
-            'I co-founded Giggl back in early 2020 to re-create being together IRL, online. We shifted focus onto Hop.'
+            'A comprehensive statistical analysis of Formula 1 data from 1950 to 2024, with interactive visualizations of racing trends, driver performances, and team strategies.'
           }
         />
         <Co
-          role={'Backend Engineer'}
-          url="https://honk.me"
-          name="Honk"
-          iconReference={HonkAppIcon}
-          tagline="Consumer social"
-          pretext={'2020'}
-          what={'I helped design and implement the realtime infrastructure at Honk using Elixir.'}
+          url="#"
+          name="Cybersecurity Assessment Tool"
+          iconReference={securityIcon}
+          tagline="Security & Networking"
+          role={'Security Researcher'}
+          pretext={'2023'}
+          what={
+            'Developed a tool for ethical hacking practice that helps identify common vulnerabilities in web applications and network configurations.'
+          }
+        />
+        <Co
+          url="#"
+          name="C++ Data Structures Library"
+          iconReference={cppIcon}
+          tagline="Systems Programming"
+          role={'Core Developer'}
+          pretext={'2022'}
+          what={'Created an efficient library of data structures and algorithms in C++ with comprehensive documentation and testing suite.'}
         />
       </CoWrapper>
 
-      <h3>Open-source Projects</h3>
+      <h3>Technical Skills & Projects</h3>
       <Repo
-        name={'lanyard'}
-        url={'https://github.com/phineas/lanyard'}
-        primaryLanguage={'Elixir'}
-        description="Expose your Discord presence to an API in <10 seconds (used on this site)"
+        name={'Django Web Development'}
+        url={'#'}
+        primaryLanguage={'Python'}
+        description="Full-stack web applications with Django, including authentication, database modeling, and RESTful APIs"
       />
       <Repo
-        name={'domain-lookup-tree'}
-        url={'https://github.com/phineas/domain-lookup-tree'}
-        primaryLanguage={'Rust'}
-        description="A tree structure in Rust optimized for looking up domain names, with wildcard support"
+        name={'Systems Programming'}
+        url={'#'}
+        primaryLanguage={'C/C++'}
+        description="Low-level programming for efficient algorithms, data structures, and system operations"
       />
       <Repo
-        name={'node_compass'}
-        url={'https://github.com/hivenapp/node_compass'}
-        primaryLanguage={'Elixir'}
-        description="Automatic hash ring management for Elixir nodes"
+        name={'Ethical Hacking'}
+        url={'#'}
+        primaryLanguage={'Python/Bash'}
+        description="Security assessment tools, vulnerability scanning, and penetration testing techniques"
       />
       <Repo
-        name={'phineas.io'}
-        url={'https://github.com/phineas/phineas.io'}
-        primaryLanguage={'TypeScript'}
-        description="This very website"
+        name={'Data Analysis'}
+        url={'#'}
+        primaryLanguage={'Python'}
+        description="Statistical analysis and visualization of complex datasets using pandas, matplotlib, and other data science tools"
       />
     </PageWrapper>
   );
@@ -91,13 +96,9 @@ const CoWrapper = styled.div`
   display: grid;
   width: 100%;
   gap: 2rem 2rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
-  @media (max-width: 1800px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     grid-template-columns: 1fr;
   }
 `;

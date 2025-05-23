@@ -5,35 +5,40 @@ import PageWrapper from './PageWrapper';
 const Etc = () => (
   <PageWrapper forceReadableWidth>
     <Helmet>
-      <title>/etc</title>
+      <title>Contact</title>
     </Helmet>
-    <h1>/etc</h1>
-    <h2>Thanks</h2>
+    <h1>Contact & Links</h1>
+    <h2>About Me</h2>
     <p>
-      Thanks for visiting. I hope you enjoyed your stay. The source code for this website is
-      available at <a href={'https://github.com/phineas/phineas.io'}>phineas/phineas.io</a>
+      Thanks for visiting my portfolio. I'm currently a 3rd year student at EMSI (École Marocaine des Sciences de l'Ingénieur) in Casablanca, Morocco.
+      I'm passionate about cybersecurity, programming, and technology, developing solutions from the vibrant tech scene of Casablanca.
     </p>
-    <h2>Contact</h2>
+    <h2>Social Media</h2>
     <p>
-      I'm most responsive through Twitter DMs, you can{' '}
-      <a href={'https://twitter.com/messages/compose?recipient_id=102583719'}>click here</a> to DM
-      me on Twitter.
+      You can find me on these platforms:
     </p>
-    <p>
-      If your inquiry is related to a network I manage or control (e.g. AS952 or AS399531), please
-      send an email to my email listed on the respective WHOIS contact. If it's an emergency, you
-      can email <a href="mailto:ops@sakuraji.ma">ops@sakuraji.ma</a>.
-    </p>
-    <h2>Other</h2>
     <ul>
       <li>
-        <Link to={'/presence'}>/presence</Link>
+        Twitter: <a href={'https://twitter.com/zyiz'} target="_blank" rel="noopener noreferrer">@zyiz</a>
       </li>
       <li>
-        PGP Fingerprint: <code>D740 E413 3A74 815E F5B6 F11B AF8B EE0C CF1D 0E46</code>
+        GitHub: <a href={'https://github.com/lilrawry'} target="_blank" rel="noopener noreferrer">@lilrawry</a>
+      </li>
+    </ul>
+    <h2>Contact</h2>
+    <p>
+      Feel free to reach out to me through Twitter DMs or connect with me on GitHub. I'm always interested in discussing
+      new projects, especially in the fields of web development and cybersecurity.
+    </p>
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <Link to={'/where'}>View my portfolio</Link>
       </li>
       <li>
-        Primary ETH Address: <code>phin.eth (0xd3AbB464df46568d1E72Fa5F156F05458f1AB26e)</code>
+        <a href="https://web-production-5336.up.railway.app/" target="_blank" rel="noopener noreferrer">
+          Room Reservation System
+        </a>
       </li>
     </ul>
   </PageWrapper>

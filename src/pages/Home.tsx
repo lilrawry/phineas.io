@@ -2,7 +2,8 @@ import { useMemo } from 'react';
 import { Tooltip } from 'react-tippy';
 import PageWrapper from './PageWrapper';
 
-const BIRTH = new Date('2001-12-28T10:15:00Z');
+// Exact birth date: March 1, 2003 (22 years old in 2025)
+const BIRTH = new Date('2003-03-01T00:00:00Z');
 const YEAR_MILLIS = 31556952000;
 
 const Home = () => {
@@ -12,48 +13,42 @@ const Home = () => {
     <PageWrapper forceReadableWidth>
       <h1>What I Do</h1>
       <p>
-        Phin. {/* @ts-ignore */}
-        <Tooltip arrow title={'28th December 2001'}>
+        Adib. {/* @ts-ignore */}
+        <Tooltip arrow title={'March 1, 2003'}>
           {age}
         </Tooltip>{' '}
-        y/o developer, innovator and investor.
+        y/o student developer and cybersecurity enthusiast.
       </p>
       <p>
-        I design, build and publish products of quality and reliability. Currently, I'm working on{' '}
-        <a href="https://hop.io" target="norel noopen">
-          Hop
-        </a>{' '}
-        as CEO.
+        I'm a 3rd year student at EMSI (École Marocaine des Sciences de l'Ingénieur), passionate about cybersecurity, 
+        programming, and technology. I design and develop robust applications with a focus on security and user experience.
       </p>
       <p>
-        I specialize in scalable real-time systems & networking, then usually pair that with React
-        for the frontend.
+        I specialize in full-stack web development with Django, C/C++ programming, and ethical hacking. 
+        I enjoy creating practical solutions to real-world problems.
       </p>
 
-      <h3>A note about networking</h3>
+      <h3>About My Technical Journey</h3>
 
       <p>
-        Network engineering sounds like a mundane and boring topic, but it's actually pretty
-        esoteric and interesting when applied on a global scale - it's the backbone of how today's
-        society communicates and operates, yet there's not many young developers engaged in the
-        topic. Contrary to popular belief, the internet still works and operates on very loose trust
-        between people and organizations - I plan to help change this for the better.
+        As a cybersecurity enthusiast, I understand that security isn't just a feature but a fundamental 
+        aspect of software design. Through my studies and personal projects, I've developed a deep 
+        appreciation for secure coding practices and vulnerability assessment. I believe that strong 
+        technical foundations combined with security awareness create truly valuable software solutions.
       </p>
 
-      <h3>About Hop</h3>
+      <h3>My Formula 1 Statistics Project</h3>
       <p>
-        Backend deployment sucks. Some companies think Kubernetes is the answer, but it actually
-        introduces way more complexity and operational overhead than needed. Hop streamlines the
-        deployment process: connect your GitHub repository, choose how you want it to run, done. No
-        nodes to manage, configs to write, no hassling around. Hop also grows with you, so if you
-        need more advanced features & customization later on, we've got you covered.
+        One of my notable projects is a comprehensive statistical analysis of Formula 1 data from 1950 to 2024. 
+        This project involved data collection, processing, and visualization to provide insights into racing 
+        trends, driver performances, and team strategies throughout F1 history. I leveraged various data analysis 
+        tools to create interactive visualizations that tell the story of Formula 1's evolution over decades.
       </p>
 
       <p>
-        We've built it on our own physical hardware with our own networking stack - this gives us
-        extreme control over the entire pipeline and allows us to minimize latency at every layer,
-        as well as cost savings and the ability to innovate at a much faster pace. This is what
-        gives us our edge over competitors.
+        This project demonstrates my ability to work with large datasets, implement efficient algorithms, 
+        and present complex information in an accessible format. My passion for both technology and Formula 1 
+        drove me to create a system that racing enthusiasts can use to explore the rich history of the sport.
       </p>
     </PageWrapper>
   );

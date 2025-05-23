@@ -99,8 +99,12 @@ const Header = styled.div`
   img {
     width: 70px;
     height: 70px;
-    border-radius: 25%;
+    border-radius: 12px;
     margin-right: 1rem;
+    background-color: #1e1e2e;
+    padding: 12px;
+    object-fit: contain;
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   div {
