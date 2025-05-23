@@ -17,10 +17,10 @@ const Home = () => {
         <Tooltip arrow title={'March 1, 2003'}>
           {age}
         </Tooltip>{' '}
-        y/o student developer and cybersecurity enthusiast.
+        year-old student developer and cybersecurity specialist.
       </p>
       <p>
-        Thanks for visiting my portfolio. I'm currently a 3rd year student at EMSI (École Marocaine des Sciences de l'Ingénieur) in Casablanca, Morocco. I'm passionate about cybersecurity, programming, and technology, developing solutions from the vibrant tech scene of Casablanca.
+        Thank you for visiting my portfolio. I am currently a 3rd year student at EMSI (École Marocaine des Sciences de l'Ingénieur) in Morocco. I am passionate about cybersecurity, programming, and technology, developing innovative solutions in the field of information technology.
       </p>
       <p>
         With expertise in full-stack web development, C/C++ programming, and cybersecurity assessments, I deliver secure, scalable, and user-centric solutions. My technical approach combines industry best practices with innovative problem-solving to address complex challenges.
@@ -28,9 +28,8 @@ const Home = () => {
 
       <h3>About My Technical Journey</h3>
 
-      <p>
-        As a cybersecurity enthusiast, I understand that security isn't just a feature but a fundamental 
-        aspect of software design. Through my studies and personal projects, I've developed a deep 
+      <p>        As a cybersecurity enthusiast, I understand that security is not merely a feature but a fundamental 
+        aspect of software design. Through my studies and personal projects, I have developed a deep 
         appreciation for secure coding practices and vulnerability assessment. I believe that strong 
         technical foundations combined with security awareness create truly valuable software solutions.
       </p>

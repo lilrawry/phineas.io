@@ -96,24 +96,22 @@ const Nav = () => {
               <ChevronDown />
             </IconButton> */}
             </Row>
-          ) : null}
-          <Row>
+          ) : null}          <Row>
             <Location
               target="_blank"
-              href={`https://www.google.com/maps/search/${encodeURIComponent('Casablanca')}`}
+              href={`https://www.google.com/maps/search/${encodeURIComponent('Morocco')}`}
               rel="noreferrer"
             >
               <NavigationIcon />
-              Casablanca
+              Morocco
             </Location>
           </Row>
 
           <div ref={dragConstraintsRef}>
             <Page active={pathname === '/' ? 1 : 0} to="/">
               what I do
-            </Page>
-            <Page active={pathname === '/where' ? 1 : 0} to="/where">
-              where I've done it
+            </Page>            <Page active={pathname === '/where' ? 1 : 0} to="/where">
+              my experience
             </Page>
             <Page active={pathname === '/how' ? 1 : 0} to="/how">
               how I do it

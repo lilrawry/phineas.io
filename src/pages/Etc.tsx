@@ -10,8 +10,8 @@ const Etc = () => (
     <h1>Contact & Links</h1>
     <h2>About Me</h2>
     <p>
-      Thanks for visiting my portfolio. I'm currently a 3rd year student at EMSI (École Marocaine des Sciences de l'Ingénieur) in Casablanca, Morocco.
-      I'm passionate about cybersecurity, programming, and technology, developing solutions from the vibrant tech scene of Casablanca.
+      Thank you for visiting my portfolio. I am currently a 3rd year student at EMSI (École Marocaine des Sciences de l'Ingénieur) in Morocco.
+      I am passionate about cybersecurity, programming, and technology, developing innovative solutions in the field of information technology.
     </p>
     <h2>Social Media</h2>
     <p>
@@ -27,7 +27,7 @@ const Etc = () => (
     </ul>
     <h2>Contact</h2>
     <p>
-      Feel free to reach out to me through Twitter DMs or connect with me on GitHub. I'm always interested in discussing
+      Please reach out to me through Twitter or connect with me on GitHub. I am always interested in discussing
       new projects, especially in the fields of web development and cybersecurity.
     </p>
     <h2>Projects</h2>
