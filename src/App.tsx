@@ -60,7 +60,7 @@ function App() {
           <SuccessiveType
             onEnd={onIntroEnd}
             words={
-              "Software was meant to be light and feel effortless to use. As we're all developing new products so rapidly, bloat in our code is catching up with us. I design simple but effective, highly-scalable and realtime products for the future."
+              "Music has the power to transform our digital experiences, much like elegant code. Through rhythm and harmony, I create immersive online experiences that resonate with users. My work blends technical precision with creative expression, designing applications that flow as naturally as a beautiful melody."
             }
             speed={1}
             userSkipped={introEnded}

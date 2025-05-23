@@ -20,12 +20,10 @@ const Home = () => {
         y/o student developer and cybersecurity enthusiast.
       </p>
       <p>
-        I'm a 3rd year student at EMSI (École Marocaine des Sciences de l'Ingénieur), passionate about cybersecurity, 
-        programming, and technology. I design and develop robust applications with a focus on security and user experience.
+        Thanks for visiting my portfolio. I'm currently a 3rd year student at EMSI (École Marocaine des Sciences de l'Ingénieur) in Casablanca, Morocco. I'm passionate about cybersecurity, programming, and technology, developing solutions from the vibrant tech scene of Casablanca.
       </p>
       <p>
-        I specialize in full-stack web development with Django, C/C++ programming, and ethical hacking. 
-        I enjoy creating practical solutions to real-world problems.
+        With expertise in full-stack web development, C/C++ programming, and cybersecurity assessments, I deliver secure, scalable, and user-centric solutions. My technical approach combines industry best practices with innovative problem-solving to address complex challenges.
       </p>
 
       <h3>About My Technical Journey</h3>
